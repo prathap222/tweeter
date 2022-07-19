@@ -9,7 +9,30 @@ nav {
   color: #ffffff;
 }
 
+/* Tweeter  */
 nav span:nth-child(1) {
   font-family: Bungee, sans-serif;
+  font-size: xx-large;
   float: left;
+}
+
+/* Write a new tweet text */
+nav span:nth-child(2) {
+  position: fixed;
+  font-size: x-large;
+  right: 1.5em;
+  top: 4em;
+}
+
+/* Angles-down */
+nav i {
+  position: absolute;
+  right: 115px;
+  bottom: 1.1em;
+  color: #e0f336;
+}
+
+nav i:hover {
+  color: rgba(13, 224, 239, 0.568);
+  transition: color 0.5s ease;
 }
