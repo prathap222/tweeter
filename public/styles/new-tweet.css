@@ -18,15 +18,14 @@ button {
   background-color:#4056A1;
   color: #ffffff;
 }
-/* Char-count */
 
-.submit-and-display {
+/* Tweet button */
+.tweet-submit {
   font-size: medium;
   font-family: 'Bungee';
   display: flex;
   justify-content: space-between;
   margin-top: 5px;
-  
 }
 
 /* Tweet box */
@@ -47,7 +46,15 @@ textarea {
   width: 100%;
 } 
 
-/* Words count negative, change color to red */
+/* Character count */
+.counter {
+  font-family: Bungee, sans-serif;
+  color: #545149;
+  float: right;
+  margin-top: 2px;
+}
+
+/* Character count negative, change color to red */
 .negative-counter {
   color: red;
 }
