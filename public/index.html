@@ -28,6 +28,9 @@
     <!-- New Tweets -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
 
+    <!-- All Tweets Display -->
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css"/>
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -37,22 +40,27 @@
      <!-- Character count JS -->
      <script type="text/javascript" src=/scripts/composer-char-counter.js></script>
 
-     
+     <!-- Prevents the 'zooming out' of the webpage as the dimensions get smaller -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
    
     <nav>
+      <footer> 
 
       <span>Tweeter</span>
       <span> Write a new tweet</span>
       <a href="#"><i class="fas fa-angle-double-down"></i></a>
+    </footer>
   </nav>
 
 
   <!-- Header -->
-  <header>
+  <header class="main-header">
     <div>
         <img src="/images/profile-hex.png"> 
     </div>
@@ -73,13 +81,37 @@
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div>
-            <div class="submit-and-display"></div>>
-              <button type="submit">Tweet</button>
-              <output name="counter" class="counter" for="tweet-text">140</output>
+            <div class="tweet-submit">
+              <button type="submit">Tweet</button> 
+              <output name="counter" class="counter" for="tweet-text">140</output> </div>
           </div>
         </form>
       </section>
     </main>
 
   </body>
+</html>
+
+<section class="tweet-container">
+   <article class="tweet">
+    <header>
+      <img src="/images/profile-hex.png"> 
+      <div><span>Newton</span></div>
+      <div>@SirIsaac </div>
+     </header>
+
+      <p>I have seen further by standing on the shoulder of giants </p>
+     
+      <footer>
+       <span> 10 days ago </span>
+       <div>
+         <a href="#"><i class="fa-solid fa-flag"></i></a> 
+         <a href="#"><i class="fa-solid fa-retweet"></i></a> 
+         <a href="#"><i class="fa-solid fa-heart"></i></a>  
+       </div>
+     </footer>
+   </article>
+ </section>
+</main>
+</body>
 </html>
