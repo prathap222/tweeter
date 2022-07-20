@@ -1,7 +1,7 @@
 nav {
   position: fixed;
   top: 0;
-  height: 120px;
+  height: 25px;
   width: 100vw;
   z-index: 99;
   padding: 1.5em;
@@ -21,14 +21,14 @@ nav span:nth-child(2) {
   position: fixed;
   font-size: x-large;
   right: 1.5em;
-  top: 4em;
+  top: 0.75em;
 }
 
 /* Arrow icon */
 nav i {
   position: absolute;
   right: 115px;
-  bottom: 1.1em;
+  bottom: 0.5em;
   color: #e0f336;
 }
 

@@ -1,8 +1,8 @@
 header {
   width: 100%;
-  height: 400px;
+  height: 295px;
   position: relative;
-  top: 120px;
+  top: 50px;
   background-color: rgba(140, 33, 0, 0.862);
   background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
 }
@@ -12,7 +12,7 @@ header img {
   display: inline-block;
   position: relative;
   left: 42vw;
-  top: 60px
+  top: 7.5px;
 }
 
 /* Name */
@@ -22,6 +22,6 @@ header h2 {
   text-align: center;
   position: relative;
   left: 42vw;
-  top: 15px;
+  top: -35px;
   color: azure;
 } 
