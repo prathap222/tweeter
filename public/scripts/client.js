@@ -39,7 +39,7 @@ const renderTweets = function (tweets) {
 
 $(document).ready (() => {
 
-  // Get tweets from server
+  // Get tweets from server; GET 
   const loadTweets = () => {
     $.ajax('/tweets', {
       method: 'GET',
@@ -47,20 +47,37 @@ $(document).ready (() => {
     }) .then(tweets => renderTweets(tweets));
   };
 
+  // Add new tweet; POST method for /tweet
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
-          
-    $.ajax('/tweets', {
-      data: $(this).serialize(),
-      method: 'POST'
+
+    const inputMessage = $('#tweet-text').val().trim();
+    console.log(inputMessage);
+
+    if(!inputMessage) {
+      alert('Cannt be empty!');
+
+    } else if (inputMessage.length > 140){
+      alert('Please make sure your tweet is under 140 characters!');
+
+    } else {
+      $.ajax('/tweets', {
+        data: $(this).serialize(),
+        method: 'POST'
+      
+      
     })
       .then(() => {
         loadTweets();
         $('#tweet-text').val('');
         $('.counter').text('140');
       });
+    }
   });
+
+
   
   loadTweets();
+  
 
 });
