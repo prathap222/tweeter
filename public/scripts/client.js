@@ -47,6 +47,20 @@ $(document).ready (() => {
     }) .then(tweets => renderTweets(tweets));
   };
 
+  $('.new-tweet form').submit(function(event) {
+    event.preventDefault();
+          
+    $.ajax('/tweets', {
+      data: $(this).serialize(),
+      method: 'POST'
+    })
+      .then(() => {
+        loadTweets();
+        $('#tweet-text').val('');
+        $('.counter').text('140');
+      });
+  });
+  
   loadTweets();
 
-})    
+});
