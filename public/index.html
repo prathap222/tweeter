@@ -38,7 +38,6 @@
      <!-- Character count JS -->
      <script type="text/javascript" src=/scripts/composer-char-counter.js></script>
      
-
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
 
@@ -48,7 +47,7 @@
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
+    <!-- Top nav bar -->
    
     <nav>
       <footer> 
@@ -76,6 +75,15 @@
     <main class="container">
 
       <section class="new-tweet">
+
+        <!-- Display error message -->
+        <div class="error-message">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span id="errorMsg"> <!-- Div to display validation error message --> </span>
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+
+        <!-- Add new tweet -->
         <h2>Compose Tweet</h2>
         <form>
           <form action="/tweets" method="POST" enctype="application/x-www-form-urlencoded">
@@ -94,24 +102,7 @@
 </html>
 
 <section class="tweets-container">
-   <!-- <article class="tweet">
-    <header>
-      <img src="/images/profile-hex.png"> 
-      <div><span>Newton</span></div>
-      <div>@SirIsaac </div>
-     </header>
-
-      <p>I have seen further by standing on the shoulder of giants </p>
-     
-      <footer>
-       <span>10 days ago </span>
-       <div>
-         <a href="#"><i class="fa-solid fa-flag"></i></a> 
-         <a href="#"><i class="fa-solid fa-retweet"></i></a> 
-         <a href="#"><i class="fa-solid fa-heart"></i></a>  
-       </div>
-     </footer>
-   </article> -->
+   <!-- Section to display all tweets -->
  </section>
 </main>
 </body>

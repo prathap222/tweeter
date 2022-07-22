@@ -46,6 +46,13 @@ const renderTweets = function (tweets) {
 
 $(document).ready (() => {
 
+  // shows/hides new tweet section when clicked the arrow icon on navbar
+  $('nav i').on('click', () => {
+    $('.new-tweet').slideToggle();
+    $('.new-tweet').show()
+    $('.new-tweet textarea').focus();
+  });
+
   // Get tweets from server; GET 
   const loadTweets = () => {
     $.ajax('/tweets', {
@@ -56,24 +63,30 @@ $(document).ready (() => {
 
   // Add new tweet; POST method for /tweet
   $('.new-tweet form').submit(function(event) {
+    
+
+    $('.error-message').slideUp('slow');
+    
     event.preventDefault();
 
     const inputMessage = $('#tweet-text').val().trim();
     console.log(inputMessage);
 
     if(!inputMessage) {
-      alert('Cannt be empty!');
+      $('.error-message').show();
+      $('#errorMsg').text('Tweeting empty is not valid!!!');
+      $('.error-message').slideDown('slow');
 
     } else if (inputMessage.length > 140){
-      alert('Please make sure your tweet is under 140 characters!');
-
+      $('.error-message').show();
+      $('#errorMsg').text('Please make sure your tweet is under 140 characters!');
+      $('.error-message').slideDown('slow');
     } else {
+      $('.error-message').hide();
       $.ajax('/tweets', {
         data: $(this).serialize(),
         method: 'POST'
-      
-      
-    })
+      })
       .then(() => {
         loadTweets();
         $('#tweet-text').val('');
