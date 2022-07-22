@@ -37,6 +37,29 @@ const database = [
       });
     };
 
+    $('.input form').submit(function(event){
+      event.preventDefault();
+    })
+
+    // serialize the data from form input and send to server
+
+    $.ajax('/tweets', {
+      data: $(this).serialize(),
+      method: 'POST'
+    });
+
+    // Get tweets from server
+
+    const loadTweets = () => {
+      $.ajax('/tweets', {
+        method: 'GET',
+        dataType: 'JSON'
+      })
+        .then(tweets => renderTweets(tweets));
+    };
+  
+    loadTweets();
+
 // const tweetData = {
 //   user: {
 //    name: "Newton",
