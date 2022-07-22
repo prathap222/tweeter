@@ -4,16 +4,23 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// Escapes unsafe characters and returns safe html. To prevent XSS
+const escape = str => {
+  const div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
 const createTweetElement = function (tweet) {
   const $tweetTemplate = `
   <article class="tweet">
     <header>
-    <img src="${tweet.user.avatars}">
-      <div><span>${tweet.user.name}</span></div>
-      <div>${tweet.user.handle}</div>
+    <img src="${escape(tweet.user.avatars)}">
+      <div><span>${escape(tweet.user.name)}</span></div>
+      <div>${escape(tweet.user.handle)}</div>
     </header>
 
-    <p> ${tweet.content.text} </p>
+    <p> ${escape(tweet.content.text)} </p>
     
     <footer>
       <span>${timeago.format(tweet.created_at)} </span>
@@ -75,9 +82,5 @@ $(document).ready (() => {
     }
   });
 
-
-  
   loadTweets();
-  
-
 });
