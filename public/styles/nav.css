@@ -15,7 +15,13 @@ nav h2 {
   font-family: Bungee, sans-serif;
   color: #fdfafa;
   left: 1.5em;
-  top: 0.75em;
+  top: 0.5em;
+}
+
+nav h3 {
+  position: fixed;
+  color: #fdfafa;
+  top: 0em;
 }
 
 /* Write a new tweet text */
@@ -67,8 +73,10 @@ nav a i:hover {
 
   nav h2 {
     position: fixed;
-    font-family: Bungee, sans-serif;
-    color: #fdfafa;
+  }
+
+  nav h3 {
+    position: fixed;
   }
 
   nav footer span {

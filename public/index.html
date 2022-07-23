@@ -9,6 +9,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.min.css" integrity="sha512-/2285SnGiTHjSKBkJzedsJ8wwSP0j74ZQyusMQ9j5Z1RtyKqZ3XtfS8hVp8OadLs2uq+8V6/n+CyqUNTO/UpYg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
      <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +40,9 @@
      
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <!-- Scroll function JS -->
+    <script type="text/javascript" src=/scripts/scroll.js></script>
 
      <!-- Prevents the 'zooming out' of the webpage as the dimensions get smaller -->
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
@@ -82,13 +86,12 @@
         <h2>Compose Tweet</h2>
         <form>
           <form action="/tweets" method="POST" enctype="application/x-www-form-urlencoded">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea> <br>
           <div>
-            <div class="tweet-submit">
-              <button type="submit">Tweet</button> 
+            <!-- <div class="tweet-submit"> -->
+              <button class="bttn-jelly bttn-md bttn-primary" type="submit">Tweet</button>
               <output name="counter" class="counter" for="tweet-text">140</output> 
-            </div>
+            <!-- </div> -->
           </div>
         </form>
       </section>
@@ -99,7 +102,9 @@
       </section>
 
       <div class="scroll-to-top">
-        <a href="#"> <i class="fa-regular fa-hand-point-up"></i> </a>
+        <button class="bttn-jelly bttn-md bttn-primary">
+          <a href="#"> <i class="fa-regular fa-hand-point-up"></i> </a>
+        </button>
       </div> 
       
     </main>

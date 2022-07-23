@@ -75,7 +75,8 @@
 }
 
 .scroll-to-top {
-  outline: none;;
+  outline: none;
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 3.5em;

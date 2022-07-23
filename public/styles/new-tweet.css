@@ -15,23 +15,23 @@ body {
 } 
 
 /* Submit button */
-button {
+/* button {
   border: none;
   font-size: medium;
   font-family: "Bungee";
   background-color:#2222cd;
   color: #ffffff;
   font-size: 18px;
-}
+} */
 
 /* Tweet button */
-.tweet-submit {
+/* .tweet-submit {
   font-size: medium;
   font-family: 'Bungee';
   display: flex;
   justify-content: space-between;
   margin-top: 5px;
-}
+} */
 
 /* Tweet box */
 textarea {
