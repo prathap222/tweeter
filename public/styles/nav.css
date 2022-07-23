@@ -26,18 +26,31 @@ nav footer span {
   top: 0.75em;
 }
 
+/* Animation for the arrow */
+@keyframes bouncing-arrow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(+5px); }
+  100% { transform: translateY(0); }
+}
+
 /* Arrow icon */
-nav i {
+nav a i {
   position: absolute;
   right: 115px;
   bottom: 0.5em;
-  color: #e0f336;
+  color: #af0785;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  animation-name: bouncing-arrow;
+  animation-timing-function: ease;
 }
 
-nav i:hover {
-  color: rgba(13, 224, 239, 0.568);
+nav a i:hover {
+  color: #f5d907;
   transition: color 0.5s ease;
 }
+
 
 @media only screen and (min-width:1024px) {
   nav {
