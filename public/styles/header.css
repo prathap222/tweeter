@@ -2,8 +2,8 @@
   height: 300px;
   position: fixed;
   top: 70px;
-  background-color: rgba(140, 33, 0, 0.862);
-  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  background-color: gray;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 
 /* Avatar  */
@@ -21,7 +21,7 @@ header div h2 {
   display: inline-block;
   position: relative;
   margin-left: 7.5em;
-  color: azure;
+  color: black
 } 
 
 @media only screen and (min-width:1024px) {

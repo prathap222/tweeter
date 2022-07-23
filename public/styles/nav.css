@@ -1,6 +1,6 @@
 nav {
-  background-color: rgba(140, 33, 0, 0.862);
-  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  background-color: gray;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   position: fixed;
   top: 0;
   height: 25px;
@@ -13,14 +13,14 @@ nav {
 nav h2 {
   position: fixed;
   font-family: Bungee, sans-serif;
-  color: #fdfafa;
+  color: black;
   left: 1.5em;
   top: 0.5em;
 }
 
 nav h3 {
   position: fixed;
-  color: #fdfafa;
+  color:  #02a8f5;
   top: 0em;
 }
 
@@ -28,6 +28,7 @@ nav h3 {
 nav footer span {
   position: fixed;
   font-size: x-large;
+  color: black;
   right: 1.5em;
   top: 0.75em;
 }
@@ -73,15 +74,18 @@ nav a i:hover {
 
   nav h2 {
     position: fixed;
+    color: #fdfafa;
   }
 
   nav h3 {
     position: fixed;
+    color: #fdfafa;
   }
 
   nav footer span {
     background-color: #02a8f5;
     background-image: none;
     font-size: x-large;
+    color: #fdfafa;
   }
 }
