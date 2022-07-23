@@ -1,7 +1,11 @@
+.tweets-container{
+  width: 40%;
+}
+
 /* A single tweet */
 .tweet {
   border: 4px solid #545149;
-  margin: 4em;
+  margin: 5em;
 }
 
 /* When hover over tweet, add shadow */
@@ -11,9 +15,10 @@
 
 /* User profile image */
 .tweet img {
+  display: inline-block;
+  position: flex;
   width: 60px;
-  margin-left: -55em;
-  margin-right: 50em;
+  align-self: center;
 }
 
 /* Tweet header */
@@ -68,4 +73,11 @@
 .tweet footer a:hover {
   color: darkgoldenrod;
   display: contents;
+}
+
+@media only screen and (min-width:1024px) {
+
+  .tweets-container{
+    width: 90%;
+  }
 }

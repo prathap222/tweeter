@@ -50,7 +50,11 @@ $(document).ready (() => {
   $('nav i').on('click', () => {
     $('.new-tweet').slideToggle();
     $('.new-tweet').show()
-    $('.new-tweet textarea').focus();
+    $('#tweet-text').focus();
+    $('#tweet-text').val('');
+    $('.counter').text('140');
+    $('.counter').removeClass('negative-counter');
+    $('.error-message').hide();
   });
 
   // Get tweets from server; GET 
@@ -76,13 +80,13 @@ $(document).ready (() => {
       $('.error-message').show();
       $('#errorMsg').text('Tweeting empty is not valid!!!');
       $('.error-message').slideDown('slow');
-
     } else if (inputMessage.length > 140){
       $('.error-message').show();
       $('#errorMsg').text('Please make sure your tweet is under 140 characters!');
       $('.error-message').slideDown('slow');
     } else {
       $('.error-message').hide();
+      $('.counter').removeClass("negative-counter");
       $.ajax('/tweets', {
         data: $(this).serialize(),
         method: 'POST'

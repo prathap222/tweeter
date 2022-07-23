@@ -1,23 +1,25 @@
 nav {
+  background-color: rgba(140, 33, 0, 0.862);
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
   position: fixed;
   top: 0;
   height: 25px;
   width: 100vw;
-  z-index: 99;
   padding: 1.5em;
-  background-color: #4056A1;
-  color: #ffffff;
+  color: white;
 }
 
 /* Tweeter text */
-nav span:nth-child(1) {
+nav h2 {
+  position: fixed;
   font-family: Bungee, sans-serif;
-  font-size: xx-large;
-  float: left;
+  color: #fdfafa;
+  left: 1.5em;
+  top: 0.75em;
 }
 
 /* Write a new tweet text */
-nav span:nth-child(2) {
+nav footer span {
   position: fixed;
   font-size: x-large;
   right: 1.5em;
@@ -35,4 +37,30 @@ nav i {
 nav i:hover {
   color: rgba(13, 224, 239, 0.568);
   transition: color 0.5s ease;
+}
+
+@media only screen and (min-width:1024px) {
+  nav {
+    background-color: #02a8f5;
+    background-image: none;
+    height: 25px;
+    width: 100vw;
+    color: white;
+    position: flex;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  nav h2 {
+    position: fixed;
+    font-family: Bungee, sans-serif;
+    color: #fdfafa;
+  }
+
+  nav footer span {
+    background-color: #02a8f5;
+    background-image: none;
+    font-size: x-large;
+  }
 }
