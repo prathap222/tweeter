@@ -20,32 +20,40 @@ Tweeter is a simple, client-side Single Page App (SPA).
 !["Screenshot of desktop-view page"](https://github.com/prathap222/tweeter/blob/master/docs/desktop-view-page.png)
 
 
+
 ### Responsive design
 !["Screenshot of responsive-design page"](https://github.com/prathap222/tweeter/blob/master/docs/responsive-design-page.png)
+
 
 
 ### Desktop-view of the tweeter page with compose tweet
 !["Screenshot of desktop-view with compose tweet"](https://github.com/prathap222/tweeter/blob/master/docs/desktop-view-with-compose-tweet.png)
 
 
+
 ### Responsive design with compose tweet
 !["Screenshot of responsive-design with compose tweet"](https://github.com/prathap222/tweeter/blob/master/docs/responsive-design-with-compose-tweet.png)
+
 
 
 ### Desktop-view with the scroll-up button
 !["Screenshot of desktop-view with scroll-up"](https://github.com/prathap222/tweeter/blob/master/docs/desktop-view-with-scroll-up.png)
 
 
+
 ### Responsive design with scroll-up button
 !["Screenshot of responsive-design with scroll-up "](https://github.com/prathap222/tweeter/blob/master/docs/responsive-design-with-scroll-up.png)
+
 
 
 ### Error message when trying to tweet empty
 !["Screenshot of error message for empty tweet"](https://github.com/prathap222/tweeter/blob/master/docs/error%20message%20for%20empty%20tweet.png)
 
 
+
 ### Error message when trying to tweet more than 140 characters
 !["Screenshot of error message for tweeting more than 140"](https://github.com/prathap222/tweeter/blob/master/docs/error%20message%20for%20tweeting%20more%20than%20140.png)
+
 
 
 ## Getting Started
