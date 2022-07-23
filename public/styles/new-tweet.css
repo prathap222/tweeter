@@ -8,7 +8,7 @@ body {
 .new-tweet {
   width: 30%;
   margin: 3.5em;
-  /* display: none; */
+  display: none;
   font-weight: 600;
   padding: 0.25em 0.5em;
   font-size: 18px;
@@ -86,17 +86,17 @@ textarea {
   }
 
   .container {
-    margin-left: 60em;
-    width: 60%;
+    margin-left: 50em;
+    width: 50%;
     padding: 0;
   } 
 
   .new-tweet {
-    width: 75%;
+    width: 60%;
     align-content: space-around;
   }
 
   .error-message {
-    width: 70%;
+    width: 50%;
   }
 }

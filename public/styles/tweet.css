@@ -75,6 +75,28 @@
   display: contents;
 }
 
+.scroll-to-top {
+  outline: none;;
+  position: fixed;
+  bottom: 20px;
+  right: 3.5em;
+  z-index: 99;
+  border: none;
+  background-color: #02a8f5; 
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+.scroll-to-top i {
+  color: white
+} 
+
+.scroll-to-top i:hover {
+  color: black;
+  transition: color 0.5s ease;
+}
+
 @media only screen and (min-width:1024px) {
 
   .tweets-container{
